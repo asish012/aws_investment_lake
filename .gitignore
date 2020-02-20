@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.DS_Store
 
 # Distribution / packaging
 build/
@@ -11,3 +12,11 @@ env/
 
 # Architecture drawing
 *.drawio
+
+# Terraform
+*.terraform/
+*.tfstate
+*.backup
+
+# Secrets
+secrets
