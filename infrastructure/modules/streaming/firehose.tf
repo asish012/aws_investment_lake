@@ -7,6 +7,6 @@ resource "aws_kinesis_firehose_delivery_stream" "firehose" {
     bucket_arn = var.firehose_destination_bucket_name   # aws_s3_bucket.raw_stock_fundamentals.arn
   }
   tags = {
-      Name = "investment-lake"
+      Name = var.tag_name
   }
 }

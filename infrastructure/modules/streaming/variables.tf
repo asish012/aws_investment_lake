@@ -18,3 +18,8 @@ variable "firehose_destination_bucket_name" {
   description = "The s3 bucket destination of the firehose"
   type        = string
 }
+
+variable "tag_name" {
+  description = "The tag name of the firehose stream"
+  type        = string
+}

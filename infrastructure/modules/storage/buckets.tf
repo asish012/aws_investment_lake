@@ -6,6 +6,6 @@ resource "aws_s3_bucket" "s3_bucket" {
       enabled = true
   }
   tags = {
-      Name = "investment-lake"
+      Name = var.tag_name
   }
 }

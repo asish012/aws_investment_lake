@@ -32,6 +32,7 @@ def put_data_to_firehose(stream_name, data):
     })
 
 if __name__ == "__main__":
-    data = {"ticker_symbol":"TSLA", "sector":"TECHNOLOGY", "change":+8.00, "price":1000}
+    data = {"ticker_symbol":"IBM", "sector":"TECHNOLOGY", "change":+8.00, "price":1000}
     put_data_to_firehose('raw-data-firehose', data)
+    put_data_to_firehose('clean-data-firehose', data)
     # put_data_to_kinesis('Planets', data)
